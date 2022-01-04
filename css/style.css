@@ -1,0 +1,172 @@
+@charset "UTF-8";
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2.6rem;
+  line-height: 3rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2.6rem;
+}
+
+@media screen and (max-width: 425px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pos-relativ {
+  position: relative;
+}
+
+.hide-scroll {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+span {
+  display: inline-block;
+}
+
+.guillemet::before {
+  content: '«';
+}
+
+.guillemet::after {
+  content: '»';
+}
+
+/* container max width -------------------  */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 890px;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.header__inner {
+  margin: 60px -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.header__logo {
+  max-width: 180px;
+}
+
+.header__link {
+  color: #ff52bf;
+  border: 2px solid #ff52bf;
+  border-radius: 20px;
+  padding: 8px 24px;
+}
+
+.header__link:hover {
+  color: #ff8fd8;
+  border-color: #ff8fd8;
+}
+
+/* main -------------------  */
+.main {
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.section-header__text {
+  margin: 0 auto;
+  max-width: 460px;
+  margin-bottom: 2rem;
+}
+
+.button {
+  color: #fff;
+  background-color: #ff52bf;
+  padding: 24px 75px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+  background-color: #ff8fd8;
+}
+
+/* footer -------------------  */
+.footer {
+  margin: 0 auto;
+}
