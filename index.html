@@ -13,6 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
@@ -73,12 +74,12 @@
       <section class="numbers">
         <ul>
           <li class="numbers__icon"> <img src="images/icon-communities.svg" alt="communities icon"></li>
-          <li class="numbers__header">1.4k+</li>
+          <li class="numbers__header"><span class="counter">1.4</span>k+</li>
           <li class="numbers__subheader">Communities Formed</li>
         </ul>
         <ul>
           <li class="numbers__icon"> <img src="images/icon-messages.svg" alt="messages icon"></li>
-          <li class="numbers__header">2.7m+</li>
+          <li class="numbers__header"><span class="counter">2.7</span>m+</li>
           <li class="numbers__subheader">Messages Sent</li>
         </ul>
       </section>
@@ -211,7 +212,10 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.countup.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
