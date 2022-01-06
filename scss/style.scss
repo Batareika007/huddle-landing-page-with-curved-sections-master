@@ -460,6 +460,10 @@ span {
     width: 400px;
     max-width: 400px;
 
+    @media screen and (max-width:700px) {
+        margin-bottom: 80px;
+    }
+
     @media screen and (max-width:425px) {
         width: auto;
     }
@@ -477,13 +481,12 @@ span {
 }
 
 .footer__form {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    @media screen and (max-width:700px) {
-        margin-bottom: 80px;
-    }
+
 
     @media screen and (max-width:425px) {
         flex-direction: column;
@@ -500,9 +503,27 @@ span {
     padding: 0 10px;
     cursor: pointer;
 
+
+
+
     @media screen and (max-width:425px) {
         flex: 0 1 auto;
         margin-bottom: 10px;
+    }
+}
+
+.error {
+    border: 1px solid $lightRed;
+}
+
+.error-msg {
+    &::after {
+        position: absolute;
+        content: 'Check your email please';
+        display: block;
+        color: $lightRed;
+        left: 0;
+        top: 30px;
     }
 }
 
@@ -511,6 +532,7 @@ span {
     background-color: $pink;
     color: white;
     cursor: pointer;
+
 
     @media screen and (max-width:425px) {
         flex: 0 1 auto;

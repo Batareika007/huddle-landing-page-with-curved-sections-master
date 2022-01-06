@@ -28,6 +28,8 @@
     .attribution a {
       color: hsl(227, 28%, 80%);
     }
+
+   
   </style>
 </head>
 
@@ -204,8 +206,12 @@
             To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
             send you spam or pass on your email address
           </p>
-          <form action="get" class="footer__form">
-            <input class="footer__form_input" type="email" name="email" id="email">
+          <form onsubmit="return check()" novalidate class="footer__form">
+            <input class="footer__form_input" type="email" name="email" id="femail" required>
+
+            <!-- error message -->
+            <span id="input-error"></span>
+            <!-- submit disabled, see script.js  -->
             <input class="footer__form_submit" type="submit" value="Subscribe">
           </form>
         </div>

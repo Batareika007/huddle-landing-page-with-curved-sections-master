@@ -520,6 +520,12 @@ span {
   max-width: 400px;
 }
 
+@media screen and (max-width: 700px) {
+  .footer__form-side {
+    margin-bottom: 80px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .footer__form-side {
     width: auto;
@@ -538,6 +544,7 @@ span {
 }
 
 .footer__form {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,12 +555,6 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media screen and (max-width: 700px) {
-  .footer__form {
-    margin-bottom: 80px;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -585,6 +586,19 @@ span {
             flex: 0 1 auto;
     margin-bottom: 10px;
   }
+}
+
+.error {
+  border: 1px solid #ff4242;
+}
+
+.error-msg::after {
+  position: absolute;
+  content: 'Check your email please';
+  display: block;
+  color: #ff4242;
+  left: 0;
+  top: 30px;
 }
 
 .footer__form_submit {
