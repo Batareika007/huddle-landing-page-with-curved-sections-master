@@ -164,6 +164,10 @@ span {
   border-color: #ff8fd8;
 }
 
+.header__link:visited {
+  color: #ff52bf;
+}
+
 /* main -------------------  */
 .main {
   position: relative;

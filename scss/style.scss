@@ -143,6 +143,10 @@ span {
         color: $lightPink;
         border-color: $lightPink;
     }
+
+    &:visited {
+        color: $pink;
+    }
 }
 
 /* main -------------------  */
